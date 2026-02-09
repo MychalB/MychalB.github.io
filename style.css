@@ -1,52 +1,149 @@
+/* =========
+   Base
+========= */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #f5f7fa;
-  color: #222;
-  line-height: 1.6;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #f6f8fb;
+  color: #111827;
+  line-height: 1.7;
 }
 
-/* centered layout */
-.container {
-  max-width: 750px;
-  margin: auto;
-  padding: 40px 20px;
-  background: white;
+/* =========
+   Layout
+========= */
+header,
+main,
+footer {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 24px 18px;
 }
 
-/* headings */
+header {
+  padding-top: 40px;
+  padding-bottom: 18px;
+}
+
+main {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 28px 20px;
+  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.06);
+}
+
+/* =========
+   Typography + hierarchy
+========= */
 h1 {
-  color: #1e3a8a;
-  font-size: 2.2rem;
-  margin-bottom: 10px;
+  margin: 0 0 8px 0;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #0f172a;
 }
 
-h2 {
-  color: #2563eb;
+p {
+  margin: 0 0 14px 0;
+  color: #334155;
 }
 
-/* date style */
+em {
+  color: #475569;
+}
+
+/* =========
+   Navigation
+========= */
+nav {
+  margin-top: 14px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1d4ed8;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+}
+
+nav a:hover {
+  background: #dbeafe;
+}
+
+/* =========
+   Post list (KEEP UL/LI structure)
+========= */
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.post-list li:last-child {
+  border-bottom: none;
+}
+
+.post-list a {
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: 650;
+}
+
+.post-list a:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+
+/* date styling for <span class="date"> */
 .date {
   color: #6b7280;
   font-size: 0.9rem;
-  margin-bottom: 20px;
+  white-space: nowrap;
 }
 
-/* links */
-a {
-  color: #2563eb;
-  text-decoration: none;
-  font-weight: 500;
+/* =========
+   Images (if you have them on index)
+========= */
+.image-grid {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 18px;
+  flex-wrap: wrap;
 }
 
-a:hover {
-  text-decoration: underline;
+.image-grid img {
+  width: 190px;
+  max-width: 45vw;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 20px rgba(17, 24, 39, 0.08);
 }
 
-/* spacing between posts */
-.post {
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e7eb;
+/* =========
+   Links in page content
+========= */
+main a {
+  color: #1d4ed8;
 }
+
 
