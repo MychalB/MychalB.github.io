@@ -1,121 +1,52 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Base layout */
 body {
-    font-family: Georgia, serif;
-    line-height: 1.7;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fafafa;
-    color: #333;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #222;
+  line-height: 1.6;
 }
 
-/* Header */
-header {
-    border-bottom: 2px solid #333;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
+/* centered layout */
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding: 40px 20px;
+  background: white;
 }
 
-header h1 {
-    margin-bottom: 5px;
+/* headings */
+h1 {
+  color: #1e3a8a;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
 }
 
-header .tagline {
-    color: #666;
-    font-style: italic;
-    margin-bottom: 10px;
+h2 {
+  color: #2563eb;
 }
 
-/* Navigation */
-nav a {
-    color: #0066cc;
-    text-decoration: none;
+/* date style */
+.date {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+/* links */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-/* Post list (index page) */
-.post-list {
-    list-style: none;
+a:hover {
+  text-decoration: underline;
 }
 
-.post-list li {
-    margin-bottom: 25px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
+/* spacing between posts */
+.post {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e7eb;
 }
 
-.post-list a {
-    font-size: 1.3em;
-    color: #333;
-    text-decoration: none;
-}
-
-.post-list a:hover {
-    color: #0066cc;
-}
-
-.post-list .date {
-    display: block;
-    margin-top: 5px;
-    color: #666;
-    font-style: italic;
-}
-
-/* Article styling */
-article h2 {
-    margin-bottom: 5px;
-}
-
-article .date {
-    color: #666;
-    font-style: italic;
-    margin-bottom: 20px;
-}
-
-article p {
-    margin-bottom: 1em;
-}
-
-/* Blockquotes */
-blockquote {
-    border-left: 3px solid #ccc;
-    margin: 1.5em 0;
-    padding-left: 1em;
-    font-style: italic;
-    color: #555;
-}
-
-/* Images in posts */
-article img {
-    max-width: 100%;
-    height: auto;
-    margin: 1.5em 0;
-}
-
-.image-caption {
-    font-size: 0.9em;
-    color: #666;
-    font-style: italic;
-    text-align: center;
-    margin-top: -1em;
-    margin-bottom: 1.5em;
-}
-
-/* Footer */
-footer {
-    margin-top: 50px;
-    padding-top: 20px;
-    border-top: 1px solid #ccc;
-    color: #666;
-    font-size: 0.9em;
-}
