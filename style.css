@@ -1,129 +1,140 @@
-/* =========
-   Base
-========= */
-* {
-  box-sizing: border-box;
+/* ===== Base ===== */
+* { box-sizing: border-box; }
+
+:root{
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #e5e7eb;
+
+  /* Accent palette */
+  --primary: #1d4ed8;     /* blue */
+  --primarySoft: #eff6ff; /* light blue */
+  --accent: #10b981;      /* green for highlights */
 }
 
-body {
-  margin: 0;
+body{
+  margin:0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: #f6f8fb;
-  color: #111827;
+  background: var(--bg);
+  color: var(--text);
   line-height: 1.7;
 }
 
-/* =========
-   Layout
-========= */
-header,
-main,
-footer {
-  max-width: 860px;
+/* ===== Layout ===== */
+header, main, footer{
+  max-width: 920px;
   margin: 0 auto;
   padding: 24px 18px;
 }
 
-header {
-  padding-top: 40px;
-  padding-bottom: 18px;
+header{
+  padding-top: 44px;
+  padding-bottom: 14px;
+  text-align: center;
 }
 
-main {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 16px;
-  padding: 28px 20px;
-  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.06);
+main{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 26px 22px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
 }
 
-/* =========
-   Typography + hierarchy
-========= */
-h1 {
-  margin: 0 0 8px 0;
-  font-size: 2rem;
-  line-height: 1.2;
-  color: #0f172a;
+/* ===== Typography / hierarchy ===== */
+h1{
+  margin: 0 0 10px 0;
+  font-size: 2.2rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
 }
 
-p {
-  margin: 0 0 14px 0;
-  color: #334155;
+header p{
+  margin: 0 0 16px 0;
+  color: var(--muted);
 }
 
-em {
-  color: #475569;
+main h1{
+  font-size: 1.8rem;
+  margin-top: 0;
 }
 
-/* =========
-   Navigation
-========= */
-nav {
-  margin-top: 14px;
-  display: flex;
-  gap: 12px;
+h2{
+  margin: 26px 0 12px;
+  font-size: 1.25rem;
+  color: var(--text);
+}
+
+/* ===== Navigation ===== */
+nav{
+  display: inline-flex;
+  gap: 10px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-nav a {
+nav a{
   text-decoration: none;
-  color: #1d4ed8;
-  font-weight: 600;
-  padding: 8px 12px;
+  color: var(--primary);
+  font-weight: 650;
+  padding: 8px 14px;
   border-radius: 999px;
-  background: #eff6ff;
+  background: var(--primarySoft);
   border: 1px solid #dbeafe;
 }
 
-nav a:hover {
+nav a:hover{
   background: #dbeafe;
 }
 
-/* =========
-   Post list (KEEP UL/LI structure)
-========= */
-.post-list {
+/* ===== Post list (keep UL/LI structure!) ===== */
+.post-list{
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.post-list li {
+.post-list li{
   padding: 14px 0;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--border);
   display: flex;
   justify-content: space-between;
-  gap: 12px;
+  gap: 14px;
   align-items: baseline;
 }
 
-.post-list li:last-child {
+.post-list li:last-child{
   border-bottom: none;
 }
 
-.post-list a {
-  color: #0f172a;
+.post-list a{
+  color: var(--text);
   text-decoration: none;
-  font-weight: 650;
+  font-weight: 700;
 }
 
-.post-list a:hover {
+.post-list a:hover{
+  color: var(--primary);
   text-decoration: underline;
-  color: #1d4ed8;
 }
 
-/* date styling for <span class="date"> */
-.date {
+.date{
   color: #6b7280;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   white-space: nowrap;
 }
 
-/* =========
-   Images (if you have them on index)
-========= */
-.image-grid {
+/* ===== Nice “featured” section look (optional headings) ===== */
+hr{
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 22px 0;
+}
+
+/* ===== Images ===== */
+.image-grid{
   display: flex;
   justify-content: center;
   gap: 18px;
@@ -131,19 +142,25 @@ nav a:hover {
   flex-wrap: wrap;
 }
 
-.image-grid img {
-  width: 190px;
-  max-width: 45vw;
-  border-radius: 14px;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 10px 20px rgba(17, 24, 39, 0.08);
+.image-grid img{
+  width: 210px;
+  max-width: 46vw;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 22px rgba(15, 23, 42, 0.12);
 }
 
-/* =========
-   Links in page content
-========= */
-main a {
-  color: #1d4ed8;
+/* ===== Links inside main ===== */
+main a{
+  color: var(--primary);
 }
+
+/* ===== Footer ===== */
+footer{
+  text-align: center;
+  color: #64748b;
+  padding-bottom: 40px;
+}
+
 
 
