@@ -258,6 +258,32 @@ td {
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
+}.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: 18px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-list a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.post-list a:hover {
+  color: var(--primary);
+}
+
+.date {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 4px;
 }
 
 
