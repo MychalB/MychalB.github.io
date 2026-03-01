@@ -160,6 +160,55 @@ footer{
   text-align: center;
   color: #64748b;
   padding-bottom: 40px;
+}/* ===== Capstone Post Styling ===== */
+
+.post-container {
+  max-width: 800px;
+  margin: 60px auto;
+  background: var(--card);
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.post-container h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.post-container h2 {
+  margin-top: 40px;
+  color: var(--text);
+}
+
+.post-container h3 {
+  margin-top: 25px;
+  color: var(--primary);
+}
+
+.post-container .intro {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.tool-section {
+  background-color: var(--primarySoft);
+  padding: 20px;
+  border-left: 4px solid var(--primary);
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.post-container ul {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.post-container .conclusion {
+  font-weight: 600;
+  margin-top: 30px;
+  font-size: 18px;
 }
 
 
