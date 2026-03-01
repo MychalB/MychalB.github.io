@@ -209,20 +209,34 @@ footer{
   font-weight: 600;
   margin-top: 30px;
   font-size: 18px;
-}table {
+}/* ===== Table Styling Fix ===== */
+
+table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 25px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 th, td {
-  border: 1px solid var(--border);
-  padding: 10px;
+  padding: 14px 16px;
   text-align: left;
 }
 
 th {
   background-color: var(--primarySoft);
+  color: var(--text);
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f9fbff;
+}
+
+td {
+  border-bottom: 1px solid var(--border);
 }
 
 
