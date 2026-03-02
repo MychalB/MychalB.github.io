@@ -429,6 +429,11 @@ nav a:hover{
   width: 70%;
   border-radius: 999px;
   background: linear-gradient(90deg, rgba(29,78,216,0.25), rgba(16,185,129,0.25), rgba(244,114,182,0.22));
+}.tagline{
+  font-style: italic;
+  opacity: 0.75;
+  margin-top: 10px;
+  font-size: 0.95rem;
 }
 
 
