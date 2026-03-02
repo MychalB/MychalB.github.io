@@ -17,7 +17,12 @@
 body{
   margin:0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: var(--bg);
+  background: linear-gradient(
+  135deg,
+  #f6f8ff 0%,
+  #eef2ff 40%,
+  #fdfbff 100%
+);
   color: var(--text);
   line-height: 1.7;
 }
