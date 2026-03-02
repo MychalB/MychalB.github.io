@@ -412,6 +412,23 @@ nav a:hover{
 
 .date{
   margin-top: 6px;
+}/* ===== Hero artsy treatment ===== */
+.hero h1{
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  position: relative;
+  display: inline-block;
+}
+
+/* hand-drawn-ish underline */
+.hero h1::after{
+  content:"";
+  display:block;
+  height: 10px;
+  margin: 10px auto 0;
+  width: 70%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(29,78,216,0.25), rgba(16,185,129,0.25), rgba(244,114,182,0.22));
 }
 
 
