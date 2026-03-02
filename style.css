@@ -302,6 +302,12 @@ td {
   text-align: center;
 }h2 {
   text-align: center;
+}.newsletter-intro {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.04);
 }
 
 
