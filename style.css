@@ -284,6 +284,8 @@ td {
   font-size: 0.85rem;
   color: var(--muted);
   margin-top: 4px;
+}.ai-images h2 {
+  text-align: center;
 }
 
 
