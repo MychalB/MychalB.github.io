@@ -311,6 +311,40 @@ td {
 }nav a {
   margin: 0 12px;
   font-weight: 500;
+}/* ===== Artsy Background (soft paper + paint blobs) ===== */
+
+/* subtle paper texture using layered gradients (no images needed) */
+body{
+  background:
+    radial-gradient(circle at 12% 18%, rgba(16,185,129,0.10), transparent 40%),
+    radial-gradient(circle at 88% 20%, rgba(29,78,216,0.12), transparent 42%),
+    radial-gradient(circle at 20% 86%, rgba(244,114,182,0.10), transparent 40%),
+    linear-gradient(135deg, #f6f8ff 0%, #eef2ff 40%, #fdfbff 100%);
+}
+
+/* floating blob highlights */
+body::before,
+body::after{
+  content:"";
+  position: fixed;
+  width: 520px;
+  height: 520px;
+  z-index: -1;
+  filter: blur(1px);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+body::before{
+  top: -240px;
+  left: -240px;
+  background: radial-gradient(circle, rgba(29,78,216,0.20), transparent 65%);
+}
+
+body::after{
+  bottom: -260px;
+  right: -260px;
+  background: radial-gradient(circle, rgba(16,185,129,0.18), transparent 65%);
 }
 
 
